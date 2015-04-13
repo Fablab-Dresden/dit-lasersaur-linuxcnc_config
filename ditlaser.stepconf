@@ -36,18 +36,18 @@
   <property name="latency" type="float" value="15000.0"/>
   <property name="machinename" type="string" value="ditlaser"/>
   <property name="manualtoolchange" type="bool" value="True"/>
-  <property name="md5sums" type="eval" value="[('/home/ditlaser/linuxcnc/configs/ditlaser/README', '33dd0a07727a56fd4a96f7967c264c59'), ('/home/ditlaser/linuxcnc/configs/ditlaser/ditlaser.ini', '3c0566ae8c0aefe7a467cadf0e3da977'), ('/home/ditlaser/linuxcnc/configs/ditlaser/ditlaser.hal', '26201ec98fa758208d799c27674cb58e')]"/>
+  <property name="md5sums" type="eval" value="[('/home/ditlaser/linuxcnc/configs/ditlaser/README', 'de6e176da7b25f6afc1484f3f875f0cf'), ('/home/ditlaser/linuxcnc/configs/ditlaser/ditlaser.ini', '0149fb7bfcca18688a7e64227a855215'), ('/home/ditlaser/linuxcnc/configs/ditlaser/ditlaser.hal', '38c0df98cefeb3ff81f969fc6244840d')]"/>
   <property name="modbus" type="bool" value="False"/>
   <property name="number_pports" type="int" value="1"/>
   <property name="period" type="int" value="25000"/>
   <property name="pin1" type="string" value="estop-out"/>
   <property name="pin10" type="string" value="max-x"/>
   <property name="pin10inv" type="bool" value="False"/>
-  <property name="pin11" type="string" value="min-y"/>
+  <property name="pin11" type="string" value="min-home-x"/>
   <property name="pin11inv" type="bool" value="False"/>
-  <property name="pin12" type="string" value="min-home-x"/>
+  <property name="pin12" type="string" value="min-home-y"/>
   <property name="pin12inv" type="bool" value="False"/>
-  <property name="pin13" type="string" value="max-home-y"/>
+  <property name="pin13" type="string" value="max-y"/>
   <property name="pin13inv" type="bool" value="False"/>
   <property name="pin14" type="string" value="spindle-cw"/>
   <property name="pin14inv" type="bool" value="False"/>
@@ -82,14 +82,14 @@
   <property name="pyvcpname" type="string" value="custom.xml"/>
   <property name="s32in" type="float" value="10.0"/>
   <property name="s32out" type="float" value="10.0"/>
-  <property name="spindlecarrier" type="float" value="100.0"/>
+  <property name="spindlecarrier" type="float" value="1000.0"/>
   <property name="spindlecpr" type="float" value="100.0"/>
   <property name="spindlefiltergain" type="float" value="0.01"/>
   <property name="spindlenearscale" type="float" value="1.5"/>
-  <property name="spindlepwm1" type="float" value="0.2"/>
-  <property name="spindlepwm2" type="float" value="0.8"/>
-  <property name="spindlespeed1" type="float" value="100.0"/>
-  <property name="spindlespeed2" type="float" value="800.0"/>
+  <property name="spindlepwm1" type="float" value="0.0"/>
+  <property name="spindlepwm2" type="float" value="1.0"/>
+  <property name="spindlespeed1" type="float" value="0.0"/>
+  <property name="spindlespeed2" type="float" value="100.0"/>
   <property name="stepspace" type="float" value="5000.0"/>
   <property name="steptime" type="float" value="5000.0"/>
   <property name="tempexists" type="int" value="0"/>
@@ -109,9 +109,9 @@
   <property name="xpulleynum" type="float" value="1.0"/>
   <property name="xscale" type="float" value="26.2467191601"/>
   <property name="xsteprev" type="float" value="200.0"/>
-  <property name="yhomepos" type="float" value="623.0"/>
-  <property name="yhomesw" type="float" value="625.0"/>
-  <property name="yhomevel" type="float" value="8.0"/>
+  <property name="yhomepos" type="float" value="-1.0"/>
+  <property name="yhomesw" type="float" value="-3.0"/>
+  <property name="yhomevel" type="float" value="-10.0"/>
   <property name="ylatchdir" type="int" value="1"/>
   <property name="yleadscrew" type="float" value="60.96"/>
   <property name="ymaxacc" type="float" value="600.0"/>
